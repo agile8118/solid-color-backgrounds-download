@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Solid color backgrounds download</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="color-picker"></div>
+      <form class="form" id="form">
+        <input type="hidden" id="color" value="" />
+        <label class="form__label" for="">Resulotion</label>
+        <div class="form__inline">
+          <input
+            class="form__input"
+            type="number"
+            placeholder="Width"
+            max="9000"
+            min="1"
+            required
+            id="width"
+          />
+          <span>x</span>
+          <input
+            class="form__input"
+            type="number"
+            id="height"
+            required
+            max="9000"
+            min="1"
+            placeholder="Height"
+          />
+        </div>
+        <div class="u-center-content">
+          <button class="button" type="submit">Download</button>
+        </div>
+      </form>
+    </div>
+    <canvas id="canvas" width="300" height="300"></canvas>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+  <script src="app.js"></script>
+</html>
