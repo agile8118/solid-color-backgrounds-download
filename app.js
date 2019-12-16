@@ -32,12 +32,11 @@ form.addEventListener("submit", function(e) {
 });
 
 // Customize the color picker
-var pickr = Pickr.create({
+const pickr = Pickr.create({
   el: ".color-picker",
-  theme: "nano",
-  swatches: null,
-  useAsButton: true,
-  inline: true,
+  theme: "classic",
+  swatches: [],
+  useAsButton: false,
   default: "#3498db",
   components: {
     preview: false,
@@ -74,3 +73,5 @@ pickr
     // Change the hidden input value to the default color picker's color
     colorInput.value = instance._color.toHEXA().toString();
   });
+
+document.querySelector(".pcr-button").innerHTML = "Pick a Color";
