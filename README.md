@@ -7,7 +7,7 @@ Your image will be prepared in a HTML canvas element and then convert to a PNG i
 
 No server involved, The main files are index.html, styles.css and app.js.
 
-You can see the app live [here](https://agile8272.github.io/solid-color-backgrounds-download).
+You can see the app live [here](https://agile8118.github.io/solid-color-backgrounds-download/).
 
 ## How to run the app
 
